@@ -14,7 +14,7 @@ git fetch
 echo "Press 'SPACE' to continue"
 read -n1 -r  key
 if [ "$key" = '' ]; then
-echo "lll"
+echo -e "\e[5mLOADING"
 else 
 echo "eee"
 fi
