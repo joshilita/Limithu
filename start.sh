@@ -25,7 +25,7 @@ chmod +x start.sh
 echo "Press 'SPACE' to continue."
 read -n1 -r  key
 if [ "$key" = '' ]; then
-echo -e "\e[5mLOADING"
+echo WIP!
 else 
 echo ""
 echo -e "\e[31mPress SPACE, not $key!"
