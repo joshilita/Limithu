@@ -1,13 +1,16 @@
 #!/usr/bin/env bash
-if git checkout master &&
-    git fetch origin master &&
-    [ `git rev-list HEAD...origin/master --count` != 0 ] &&
-    git merge origin/master
-then
-    echo 'Updated!'
-else
-    echo 'Not updaled.'
-fi
+git fetch
+ HEADHASH=$(git rev-parse HEAD)
+ UPSTREAMHASH=$(git rev-parse master@{upstream})
+
+ if [ "$HEADHASH" != "$UPSTREAMHASH" ]
+ then
+   echo Error
+   echo
+   exit 0
+ else
+   echo -e ${FINISHED}Current branch is up to date with origin/master.${NOCOLOR}
+ fi
 echo "Press 'SPACE' to continue"
 read -n1 -r  key
 if [ "$key" = '' ]; then
