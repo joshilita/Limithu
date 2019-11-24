@@ -7,7 +7,7 @@ git fetch
  then
    echo "Limuthu needs to update. Press 'SPACE' to update."
    read -n1 -r  upd
-   if [ "$upd = '' ]; then
+   if [ "$upd" = '' ]; then
    git pull && bash start.sh
    fi  
  else
