@@ -5,9 +5,11 @@ git fetch
 
  if [ "$HEADHASH" != "$UPSTREAMHASH" ]
  then
-   echo Error
-   echo
-   exit 0
+   echo "Limuthu needs to update. Press 'SPACE' to update."
+   read -n1 -r  upd
+   if [ "$upd = '' ]; then
+   git pull && bash start.sh
+   fi  
  else
    echo -e ${FINISHED}Current branch is up to date with origin/master.${NOCOLOR}
  fi
