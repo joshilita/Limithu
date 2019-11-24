@@ -20,5 +20,6 @@ read -n1 -r  key
 if [ "$key" = '' ]; then
 echo -e "\e[5mLOADING"
 else 
+echo ""
 echo -e "\e[31mPress SPACE, not $key!"
 fi
