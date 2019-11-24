@@ -6,5 +6,5 @@ then
   echo "Installing"
   apt-get install zenity
  else
-  dialog --msgbox "Dialog is not released yet." 0 0
+  dialog --msgbox "Dialog is not released yet." 0 0 && clear
 fi
