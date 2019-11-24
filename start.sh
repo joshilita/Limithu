@@ -10,7 +10,7 @@ git fetch
 
  if [ "$HEADHASH" != "$UPSTREAMHASH" ]
  then
-   echo "Limuthu needs to update. Press 'SPACE' to update."
+   echo -e "${ERROR}Limuthu needs to update. Press 'SPACE' to update.${NOCOLOR}"
    read -n1 -r  upd
    if [ "$upd" = '' ]; then
    git pull && bash start.sh
