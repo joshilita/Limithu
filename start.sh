@@ -2,5 +2,5 @@
 echo "Press 'SPACE' to continue."
 read -n1 -r  key
 if [ "$key = '' ];then
-echo "Loading..."
+echo "lll"
 fi
