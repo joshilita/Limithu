@@ -5,6 +5,7 @@
  NOCOLOR='\033[0m' # No Color
  ERROR='\033[0;31m'
 git fetch
+git stash
  HEADHASH=$(git rev-parse HEAD)
  UPSTREAMHASH=$(git rev-parse master@{upstream})
 
