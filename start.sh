@@ -8,7 +8,7 @@ then
 else
     echo 'Not updated.'
 fi
-echo "Press 'SPACE' to continue"
+echo "Press 'SPACE' to continue."
 read -n1 -r  key
 if [ "$key" = '' ]; then
 echo "lll"
