@@ -18,7 +18,7 @@ git fetch
    exit 0
    fi  
  else
-   echo -e ${FINISHED}Current branch is up to date with origin/master.${NOCOLOR}
+   echo -e ${FINISHED}Limithu is up to date.${NOCOLOR}
  fi
 echo "Press 'SPACE' to continue."
 read -n1 -r  key
