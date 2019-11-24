@@ -6,6 +6,7 @@
  ERROR='\033[0;31m'
 git fetch
 git stash
+chmod +x start.sh
  HEADHASH=$(git rev-parse HEAD)
  UPSTREAMHASH=$(git rev-parse master@{upstream})
 
