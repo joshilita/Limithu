@@ -6,7 +6,7 @@ if git checkout master &&
 then
     echo 'Updated!'
 else
-    echo 'Not updated.'
+    echo 'Not updaled.'
 fi
 echo "Press 'SPACE' to continue"
 read -n1 -r  key
