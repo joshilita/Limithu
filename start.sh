@@ -13,7 +13,7 @@ git fetch
  else
    echo -e ${FINISHED}Current branch is up to date with origin/master.${NOCOLOR}
  fi
-echo "Press 'SPACE' to continue"
+echo "Press 'SPACE' to continue."
 read -n1 -r  key
 if [ "$key" = '' ]; then
 echo -e "\e[5mLOADING"
