@@ -9,6 +9,8 @@ git fetch
    read -n1 -r  upd
    if [ "$upd" = '' ]; then
    git pull && bash start.sh
+   else
+   exit 0
    fi  
  else
    echo -e ${FINISHED}Current branch is up to date with origin/master.${NOCOLOR}
